@@ -1,0 +1,38 @@
+{
+  "" : {
+    "diagnostics" : "/Users/gssp/development/swift/MacGPT/build/MacGPT.build/Debug/MacGPT.build/Objects-normal/arm64/MacGPT-master.dia",
+    "emit-module-dependencies" : "/Users/gssp/development/swift/MacGPT/build/MacGPT.build/Debug/MacGPT.build/Objects-normal/arm64/MacGPT-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/gssp/development/swift/MacGPT/build/MacGPT.build/Debug/MacGPT.build/Objects-normal/arm64/MacGPT-master-emit-module.dia",
+    "swift-dependencies" : "/Users/gssp/development/swift/MacGPT/build/MacGPT.build/Debug/MacGPT.build/Objects-normal/arm64/MacGPT-master.swiftdeps"
+  },
+  "/Users/gssp/development/swift/MacGPT/build/MacGPT.build/Debug/MacGPT.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/gssp/development/swift/MacGPT/build/MacGPT.build/Debug/MacGPT.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/gssp/development/swift/MacGPT/build/MacGPT.build/Debug/MacGPT.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/gssp/development/swift/MacGPT/build/MacGPT.build/Debug/MacGPT.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/MacGPT.build/Debug/MacGPT.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/gssp/development/swift/MacGPT/build/MacGPT.build/Debug/MacGPT.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/gssp/development/swift/MacGPT/build/MacGPT.build/Debug/MacGPT.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/gssp/development/swift/MacGPT/build/MacGPT.build/Debug/MacGPT.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/gssp/development/swift/MacGPT/build/MacGPT.build/Debug/MacGPT.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  },
+  "/Users/gssp/development/swift/MacGPT/MacGPT/ContentView.swift" : {
+    "const-values" : "/Users/gssp/development/swift/MacGPT/build/MacGPT.build/Debug/MacGPT.build/Objects-normal/arm64/ContentView.swiftconstvalues",
+    "dependencies" : "/Users/gssp/development/swift/MacGPT/build/MacGPT.build/Debug/MacGPT.build/Objects-normal/arm64/ContentView.d",
+    "diagnostics" : "/Users/gssp/development/swift/MacGPT/build/MacGPT.build/Debug/MacGPT.build/Objects-normal/arm64/ContentView.dia",
+    "index-unit-output-path" : "/MacGPT.build/Debug/MacGPT.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/gssp/development/swift/MacGPT/build/MacGPT.build/Debug/MacGPT.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/gssp/development/swift/MacGPT/build/MacGPT.build/Debug/MacGPT.build/Objects-normal/arm64/ContentView.o",
+    "swift-dependencies" : "/Users/gssp/development/swift/MacGPT/build/MacGPT.build/Debug/MacGPT.build/Objects-normal/arm64/ContentView.swiftdeps",
+    "swiftmodule" : "/Users/gssp/development/swift/MacGPT/build/MacGPT.build/Debug/MacGPT.build/Objects-normal/arm64/ContentView~partial.swiftmodule"
+  },
+  "/Users/gssp/development/swift/MacGPT/MacGPT/MacGPTApp.swift" : {
+    "const-values" : "/Users/gssp/development/swift/MacGPT/build/MacGPT.build/Debug/MacGPT.build/Objects-normal/arm64/MacGPTApp.swiftconstvalues",
+    "dependencies" : "/Users/gssp/development/swift/MacGPT/build/MacGPT.build/Debug/MacGPT.build/Objects-normal/arm64/MacGPTApp.d",
+    "diagnostics" : "/Users/gssp/development/swift/MacGPT/build/MacGPT.build/Debug/MacGPT.build/Objects-normal/arm64/MacGPTApp.dia",
+    "index-unit-output-path" : "/MacGPT.build/Debug/MacGPT.build/Objects-normal/arm64/MacGPTApp.o",
+    "llvm-bc" : "/Users/gssp/development/swift/MacGPT/build/MacGPT.build/Debug/MacGPT.build/Objects-normal/arm64/MacGPTApp.bc",
+    "object" : "/Users/gssp/development/swift/MacGPT/build/MacGPT.build/Debug/MacGPT.build/Objects-normal/arm64/MacGPTApp.o",
+    "swift-dependencies" : "/Users/gssp/development/swift/MacGPT/build/MacGPT.build/Debug/MacGPT.build/Objects-normal/arm64/MacGPTApp.swiftdeps",
+    "swiftmodule" : "/Users/gssp/development/swift/MacGPT/build/MacGPT.build/Debug/MacGPT.build/Objects-normal/arm64/MacGPTApp~partial.swiftmodule"
+  }
+}
