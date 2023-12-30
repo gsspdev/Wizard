@@ -275,6 +275,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import AppKit;
+@import ObjectiveC;
 #endif
 
 #endif
@@ -295,7 +297,27 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+@class NSNotification;
 
+SWIFT_CLASS("_TtC6MacGPT11AppDelegate")
+@interface AppDelegate : NSObject <NSApplicationDelegate>
+- (void)applicationDidFinishLaunching:(NSNotification * _Nonnull)aNotification;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC6MacGPT14ViewController")
+@interface ViewController : NSViewController
+- (void)loadView;
+- (void)viewDidLoad;
+- (void)sendMessage;
+- (nonnull instancetype)initWithNibName:(NSNibName _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
 
 #endif
 #if __has_attribute(external_source_symbol)

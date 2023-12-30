@@ -11,6 +11,9 @@
 		8B696B392B3E9C8A00B196CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B696B382B3E9C8A00B196CF /* ContentView.swift */; };
 		8B696B3B2B3E9C8A00B196CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B696B3A2B3E9C8A00B196CF /* Assets.xcassets */; };
 		8B696B3E2B3E9C8A00B196CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B696B3D2B3E9C8A00B196CF /* Preview Assets.xcassets */; };
+		8BEA67AD2B404E5E003D7397 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA67AC2B404E5E003D7397 /* ViewController.swift */; };
+		8BEA67AF2B404E72003D7397 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA67AE2B404E72003D7397 /* AppDelegate.swift */; };
+		8BEA67B12B40515D003D7397 /* ChatGPTNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA67B02B40515D003D7397 /* ChatGPTNetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		8B696B3A2B3E9C8A00B196CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B696B3D2B3E9C8A00B196CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8B696B3F2B3E9C8A00B196CF /* MacGPT.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacGPT.entitlements; sourceTree = "<group>"; };
+		8BEA67AC2B404E5E003D7397 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8BEA67AE2B404E72003D7397 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8BEA67B02B40515D003D7397 /* ChatGPTNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTNetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +59,10 @@
 			isa = PBXGroup;
 			children = (
 				8B696B362B3E9C8A00B196CF /* MacGPTApp.swift */,
+				8BEA67B22B405560003D7397 /* Networking */,
 				8B696B382B3E9C8A00B196CF /* ContentView.swift */,
+				8BEA67AE2B404E72003D7397 /* AppDelegate.swift */,
+				8BEA67AC2B404E5E003D7397 /* ViewController.swift */,
 				8B696B3A2B3E9C8A00B196CF /* Assets.xcassets */,
 				8B696B3F2B3E9C8A00B196CF /* MacGPT.entitlements */,
 				8B696B3C2B3E9C8A00B196CF /* Preview Content */,
@@ -67,6 +76,14 @@
 				8B696B3D2B3E9C8A00B196CF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8BEA67B22B405560003D7397 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8BEA67B02B40515D003D7397 /* ChatGPTNetworkManager.swift */,
+			);
+			name = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +157,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B696B392B3E9C8A00B196CF /* ContentView.swift in Sources */,
+				8BEA67B12B40515D003D7397 /* ChatGPTNetworkManager.swift in Sources */,
+				8BEA67AD2B404E5E003D7397 /* ViewController.swift in Sources */,
+				8BEA67AF2B404E72003D7397 /* AppDelegate.swift in Sources */,
 				8B696B372B3E9C8A00B196CF /* MacGPTApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
