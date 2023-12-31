@@ -22,10 +22,11 @@
 		8B696B382B3E9C8A00B196CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8B696B3A2B3E9C8A00B196CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B696B3D2B3E9C8A00B196CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		8B696B3F2B3E9C8A00B196CF /* MacGPT.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacGPT.entitlements; sourceTree = "<group>"; };
+		8B696B3F2B3E9C8A00B196CF /* Wizard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Wizard.entitlements; sourceTree = "<group>"; };
 		8BEA67AC2B404E5E003D7397 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8BEA67AE2B404E72003D7397 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BEA67B02B40515D003D7397 /* ChatGPTNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTNetworkManager.swift; sourceTree = "<group>"; };
+		8BF508A92B411DB70042ADE1 /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +43,8 @@
 		8B696B2A2B3E9C8A00B196CF = {
 			isa = PBXGroup;
 			children = (
-				8B696B352B3E9C8A00B196CF /* MacGPT */,
+				8BF508A92B411DB70042ADE1 /* Secrets.xcconfig */,
+				8B696B352B3E9C8A00B196CF /* Wizard */,
 				8B696B342B3E9C8A00B196CF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,7 +57,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8B696B352B3E9C8A00B196CF /* MacGPT */ = {
+		8B696B352B3E9C8A00B196CF /* Wizard */ = {
 			isa = PBXGroup;
 			children = (
 				8B696B362B3E9C8A00B196CF /* Wizard.swift */,
@@ -64,10 +66,10 @@
 				8BEA67AE2B404E72003D7397 /* AppDelegate.swift */,
 				8BEA67AC2B404E5E003D7397 /* ViewController.swift */,
 				8B696B3A2B3E9C8A00B196CF /* Assets.xcassets */,
-				8B696B3F2B3E9C8A00B196CF /* MacGPT.entitlements */,
+				8B696B3F2B3E9C8A00B196CF /* Wizard.entitlements */,
 				8B696B3C2B3E9C8A00B196CF /* Preview Content */,
 			);
-			path = MacGPT;
+			path = Wizard;
 			sourceTree = "<group>";
 		};
 		8B696B3C2B3E9C8A00B196CF /* Preview Content */ = {
@@ -102,7 +104,7 @@
 			dependencies = (
 			);
 			name = Wizard;
-			productName = MacGPT;
+			productName = Wizard;
 			productReference = 8B696B332B3E9C8A00B196CF /* Wizard.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -290,13 +292,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = MacGPT/MacGPT.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Wizard/Wizard.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MacGPT/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Wizard/Preview Content\"";
 				DEVELOPMENT_TEAM = VMVQ575S4L;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -309,7 +311,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = rekreation.MacGPT;
+				PRODUCT_BUNDLE_IDENTIFIER = rekreation.Wizard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -322,13 +324,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = MacGPT/MacGPT.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Wizard/Wizard.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MacGPT/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Wizard/Preview Content\"";
 				DEVELOPMENT_TEAM = VMVQ575S4L;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -341,7 +343,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = rekreation.MacGPT;
+				PRODUCT_BUNDLE_IDENTIFIER = rekreation.Wizard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;

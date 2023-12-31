@@ -17,7 +17,7 @@ struct MacGPTApp: App {
                 .frame(width: 400, height:600)
         }
         .commands {
-            }
+            } // for whatever reason leaving .commands in skips open dialog
 //            .windowStyle(.hiddenTitleBar)
 //            .windowToolbarStyle(.unified)
 //            .windowResizability(.automatic)
