@@ -7,7 +7,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>MacGPT</string>
+	<string>Wizard</string>
 	<key>CFBundleExecutable</key>
 	<string>MacGPT</string>
 	<key>CFBundleIdentifier</key>
