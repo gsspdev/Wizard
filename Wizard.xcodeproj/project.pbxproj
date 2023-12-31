@@ -11,6 +11,7 @@
 		8B696B392B3E9C8A00B196CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B696B382B3E9C8A00B196CF /* ContentView.swift */; };
 		8B696B3B2B3E9C8A00B196CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B696B3A2B3E9C8A00B196CF /* Assets.xcassets */; };
 		8B696B3E2B3E9C8A00B196CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B696B3D2B3E9C8A00B196CF /* Preview Assets.xcassets */; };
+		8BB6CF802B412F6C00155FBA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8BB6CF7F2B412F6C00155FBA /* Info.plist */; };
 		8BEA67AD2B404E5E003D7397 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA67AC2B404E5E003D7397 /* ViewController.swift */; };
 		8BEA67AF2B404E72003D7397 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA67AE2B404E72003D7397 /* AppDelegate.swift */; };
 		8BEA67B12B40515D003D7397 /* ChatGPTNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA67B02B40515D003D7397 /* ChatGPTNetworkManager.swift */; };
@@ -23,10 +24,11 @@
 		8B696B3A2B3E9C8A00B196CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B696B3D2B3E9C8A00B196CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8B696B3F2B3E9C8A00B196CF /* Wizard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Wizard.entitlements; sourceTree = "<group>"; };
+		8BB6CF7A2B412D3400155FBA /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
+		8BB6CF7F2B412F6C00155FBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BEA67AC2B404E5E003D7397 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8BEA67AE2B404E72003D7397 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BEA67B02B40515D003D7397 /* ChatGPTNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTNetworkManager.swift; sourceTree = "<group>"; };
-		8BF508A92B411DB70042ADE1 /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +45,8 @@
 		8B696B2A2B3E9C8A00B196CF = {
 			isa = PBXGroup;
 			children = (
-				8BF508A92B411DB70042ADE1 /* Secrets.xcconfig */,
+				8BB6CF7F2B412F6C00155FBA /* Info.plist */,
+				8BB6CF7A2B412D3400155FBA /* Secrets.xcconfig */,
 				8B696B352B3E9C8A00B196CF /* Wizard */,
 				8B696B342B3E9C8A00B196CF /* Products */,
 			);
@@ -148,6 +151,7 @@
 			files = (
 				8B696B3E2B3E9C8A00B196CF /* Preview Assets.xcassets in Resources */,
 				8B696B3B2B3E9C8A00B196CF /* Assets.xcassets in Resources */,
+				8BB6CF802B412F6C00155FBA /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +175,7 @@
 /* Begin XCBuildConfiguration section */
 		8B696B402B3E9C8A00B196CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BB6CF7A2B412D3400155FBA /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -289,6 +294,7 @@
 		};
 		8B696B432B3E9C8A00B196CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BB6CF7A2B412D3400155FBA /* Secrets.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -326,7 +332,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Wizard/Wizard.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;

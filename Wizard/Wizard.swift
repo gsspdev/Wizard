@@ -8,6 +8,7 @@
 import SwiftUI
 
 @main
+
 struct MacGPTApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     

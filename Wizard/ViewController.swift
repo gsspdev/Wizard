@@ -1,5 +1,6 @@
 // ViewController.swift
 import Cocoa
+import CoreFoundation
 
 class ViewController: NSViewController {
 
@@ -16,7 +17,7 @@ class ViewController: NSViewController {
 
         // Create the user input field
         userInput = NSTextField(string: "")
-        userInput.placeholderString = "Type your message here..."
+        userInput.placeholderString = "Placeholder string"
         view.addSubview(userInput)
 
         // Create the send button
