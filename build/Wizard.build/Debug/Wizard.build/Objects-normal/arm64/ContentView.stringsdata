@@ -1,0 +1,16 @@
+{
+  "source": "/Users/gssp/development/swift/MacGPT/MacGPT/ContentView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Type your message here..."
+      },
+      {
+        "comment": "",
+        "key": "Send"
+      }
+    ]
+  },
+  "version": 1
+}
