@@ -307,6 +307,8 @@ SWIFT_CLASS("_TtC6Wizard11AppDelegate")
 
 
 
+
+
 @class NSBundle;
 @class NSCoder;
 

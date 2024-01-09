@@ -10,6 +10,10 @@
 	<string>Wizard</string>
 	<key>CFBundleExecutable</key>
 	<string>Wizard</string>
+	<key>CFBundleIconFile</key>
+	<string>AppIcon</string>
+	<key>CFBundleIconName</key>
+	<string>AppIcon</string>
 	<key>CFBundleIdentifier</key>
 	<string>rekreation.Wizard</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -39,12 +43,12 @@
 	<key>DTSDKName</key>
 	<string>macosx14.2</string>
 	<key>DTXcode</key>
-	<string>1510</string>
+	<string>1520</string>
 	<key>DTXcodeBuild</key>
-	<string>15C65</string>
+	<string>15C5500c</string>
 	<key>LSApplicationCategoryType</key>
-	<string>public.app-category.developer-tools</string>
+	<string>public.app-category.productivity</string>
 	<key>LSMinimumSystemVersion</key>
-	<string>14.2</string>
+	<string>12.0</string>
 </dict>
 </plist>

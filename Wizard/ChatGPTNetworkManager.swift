@@ -14,7 +14,7 @@ class ChatGPTNetworkManager {
 
         var request = URLRequest(url: url, cachePolicy: .useProtocolCachePolicy, timeoutInterval: 60.0)
         request.httpMethod = "POST"
-        request.addValue("Bearer API_KEY_GOES_HERE", forHTTPHeaderField: "Authorization") // Securely replace with your actual API key
+        request.addValue("Bearer OPEN_AI_KEY_GO_HERE", forHTTPHeaderField: "Authorization") // Securely replace with your actual API key
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
 
         let body: [String: Any] = [

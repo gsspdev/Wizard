@@ -21,22 +21,22 @@ private let resourceBundle = Foundation.Bundle(for: ResourceBundleClass.self)
 
 // MARK: - Color Symbols -
 
-@available(iOS 17.0, macOS 14.0, tvOS 17.0, watchOS 10.0, *)
-extension DeveloperToolsSupport.ColorResource {
+@available(iOS 11.0, macOS 10.13, tvOS 11.0, *)
+extension ColorResource {
 
 }
 
 // MARK: - Image Symbols -
 
-@available(iOS 17.0, macOS 14.0, tvOS 17.0, watchOS 10.0, *)
-extension DeveloperToolsSupport.ImageResource {
+@available(iOS 11.0, macOS 10.7, tvOS 11.0, *)
+extension ImageResource {
 
 }
 
 // MARK: - Color Symbol Extensions -
 
 #if canImport(AppKit)
-@available(macOS 14.0, *)
+@available(macOS 10.13, *)
 @available(macCatalyst, unavailable)
 extension AppKit.NSColor {
 
@@ -44,7 +44,7 @@ extension AppKit.NSColor {
 #endif
 
 #if canImport(UIKit)
-@available(iOS 17.0, tvOS 17.0, *)
+@available(iOS 11.0, tvOS 11.0, *)
 @available(watchOS, unavailable)
 extension UIKit.UIColor {
 
@@ -52,12 +52,12 @@ extension UIKit.UIColor {
 #endif
 
 #if canImport(SwiftUI)
-@available(iOS 17.0, macOS 14.0, tvOS 17.0, watchOS 10.0, *)
+@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 extension SwiftUI.Color {
 
 }
 
-@available(iOS 17.0, macOS 14.0, tvOS 17.0, watchOS 10.0, *)
+@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 extension SwiftUI.ShapeStyle where Self == SwiftUI.Color {
 
 }
@@ -66,7 +66,7 @@ extension SwiftUI.ShapeStyle where Self == SwiftUI.Color {
 // MARK: - Image Symbol Extensions -
 
 #if canImport(AppKit)
-@available(macOS 14.0, *)
+@available(macOS 10.7, *)
 @available(macCatalyst, unavailable)
 extension AppKit.NSImage {
 
@@ -74,7 +74,7 @@ extension AppKit.NSImage {
 #endif
 
 #if canImport(UIKit)
-@available(iOS 17.0, tvOS 17.0, *)
+@available(iOS 11.0, tvOS 11.0, *)
 @available(watchOS, unavailable)
 extension UIKit.UIImage {
 
@@ -83,9 +83,9 @@ extension UIKit.UIImage {
 
 // MARK: - Thinnable Asset Support -
 
-@available(iOS 17.0, macOS 14.0, tvOS 17.0, watchOS 10.0, *)
+@available(iOS 11.0, macOS 10.13, tvOS 11.0, *)
 @available(watchOS, unavailable)
-extension DeveloperToolsSupport.ColorResource {
+extension ColorResource {
 
     private init?(thinnableName: String, bundle: Bundle) {
 #if canImport(AppKit) && os(macOS)
@@ -108,11 +108,11 @@ extension DeveloperToolsSupport.ColorResource {
 }
 
 #if canImport(UIKit)
-@available(iOS 17.0, tvOS 17.0, *)
+@available(iOS 11.0, tvOS 11.0, *)
 @available(watchOS, unavailable)
 extension UIKit.UIColor {
 
-    private convenience init?(thinnableResource: DeveloperToolsSupport.ColorResource?) {
+    private convenience init?(thinnableResource: ColorResource?) {
 #if !os(watchOS)
         if let resource = thinnableResource {
             self.init(resource: resource)
@@ -128,10 +128,10 @@ extension UIKit.UIColor {
 #endif
 
 #if canImport(SwiftUI)
-@available(iOS 17.0, macOS 14.0, tvOS 17.0, watchOS 10.0, *)
+@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 extension SwiftUI.Color {
 
-    private init?(thinnableResource: DeveloperToolsSupport.ColorResource?) {
+    private init?(thinnableResource: ColorResource?) {
         if let resource = thinnableResource {
             self.init(resource)
         } else {
@@ -141,10 +141,10 @@ extension SwiftUI.Color {
 
 }
 
-@available(iOS 17.0, macOS 14.0, tvOS 17.0, watchOS 10.0, *)
+@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 extension SwiftUI.ShapeStyle where Self == SwiftUI.Color {
 
-    private init?(thinnableResource: DeveloperToolsSupport.ColorResource?) {
+    private init?(thinnableResource: ColorResource?) {
         if let resource = thinnableResource {
             self.init(resource)
         } else {
@@ -155,9 +155,9 @@ extension SwiftUI.ShapeStyle where Self == SwiftUI.Color {
 }
 #endif
 
-@available(iOS 17.0, macOS 14.0, tvOS 17.0, watchOS 10.0, *)
+@available(iOS 11.0, macOS 10.7, tvOS 11.0, *)
 @available(watchOS, unavailable)
-extension DeveloperToolsSupport.ImageResource {
+extension ImageResource {
 
     private init?(thinnableName: String, bundle: Bundle) {
 #if canImport(AppKit) && os(macOS)
@@ -180,11 +180,11 @@ extension DeveloperToolsSupport.ImageResource {
 }
 
 #if canImport(UIKit)
-@available(iOS 17.0, tvOS 17.0, *)
+@available(iOS 11.0, tvOS 11.0, *)
 @available(watchOS, unavailable)
 extension UIKit.UIImage {
 
-    private convenience init?(thinnableResource: DeveloperToolsSupport.ImageResource?) {
+    private convenience init?(thinnableResource: ImageResource?) {
 #if !os(watchOS)
         if let resource = thinnableResource {
             self.init(resource: resource)
@@ -199,3 +199,119 @@ extension UIKit.UIImage {
 }
 #endif
 
+// MARK: - Backwards Deployment Support -
+
+/// A color resource.
+struct ColorResource: Hashable {
+
+    /// An asset catalog color resource name.
+    fileprivate let name: String
+
+    /// An asset catalog color resource bundle.
+    fileprivate let bundle: Bundle
+
+    /// Initialize a `ColorResource` with `name` and `bundle`.
+    init(name: String, bundle: Bundle) {
+        self.name = name
+        self.bundle = bundle
+    }
+
+}
+
+/// An image resource.
+struct ImageResource: Hashable {
+
+    /// An asset catalog image resource name.
+    fileprivate let name: String
+
+    /// An asset catalog image resource bundle.
+    fileprivate let bundle: Bundle
+
+    /// Initialize an `ImageResource` with `name` and `bundle`.
+    init(name: String, bundle: Bundle) {
+        self.name = name
+        self.bundle = bundle
+    }
+
+}
+
+#if canImport(AppKit)
+@available(macOS 10.13, *)
+@available(macCatalyst, unavailable)
+extension AppKit.NSColor {
+
+    /// Initialize a `NSColor` with a color resource.
+    convenience init(resource: ColorResource) {
+        self.init(named: NSColor.Name(resource.name), bundle: resource.bundle)!
+    }
+
+}
+
+protocol _ACResourceInitProtocol {}
+extension AppKit.NSImage: _ACResourceInitProtocol {}
+
+@available(macOS 10.7, *)
+@available(macCatalyst, unavailable)
+extension _ACResourceInitProtocol {
+
+    /// Initialize a `NSImage` with an image resource.
+    init(resource: ImageResource) {
+        self = resource.bundle.image(forResource: NSImage.Name(resource.name))! as! Self
+    }
+
+}
+#endif
+
+#if canImport(UIKit)
+@available(iOS 11.0, tvOS 11.0, *)
+@available(watchOS, unavailable)
+extension UIKit.UIColor {
+
+    /// Initialize a `UIColor` with a color resource.
+    convenience init(resource: ColorResource) {
+#if !os(watchOS)
+        self.init(named: resource.name, in: resource.bundle, compatibleWith: nil)!
+#else
+        self.init()
+#endif
+    }
+
+}
+
+@available(iOS 11.0, tvOS 11.0, *)
+@available(watchOS, unavailable)
+extension UIKit.UIImage {
+
+    /// Initialize a `UIImage` with an image resource.
+    convenience init(resource: ImageResource) {
+#if !os(watchOS)
+        self.init(named: resource.name, in: resource.bundle, compatibleWith: nil)!
+#else
+        self.init()
+#endif
+    }
+
+}
+#endif
+
+#if canImport(SwiftUI)
+@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+extension SwiftUI.Color {
+
+    /// Initialize a `Color` with a color resource.
+    init(_ resource: ColorResource) {
+        self.init(resource.name, bundle: resource.bundle)
+    }
+
+}
+
+@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+extension SwiftUI.Image {
+
+    /// Initialize an `Image` with an image resource.
+    init(_ resource: ImageResource) {
+        self.init(resource.name, bundle: resource.bundle)
+    }
+
+}
+#endif

@@ -1,6 +1,12 @@
 {
   "images" : [
     {
+      "filename" : "WizardIcon.png",
+      "idiom" : "universal",
+      "platform" : "ios",
+      "size" : "1024x1024"
+    },
+    {
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "16x16"
@@ -26,21 +32,25 @@
       "size" : "128x128"
     },
     {
+      "filename" : "WizardIcon256x256.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "128x128"
     },
     {
+      "filename" : "WizardIcon256x256 1.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "256x256"
     },
     {
+      "filename" : "WizardIcon512x512 1.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "256x256"
     },
     {
+      "filename" : "WizardIcon512x512.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "512x512"
