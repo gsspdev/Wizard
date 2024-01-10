@@ -62,7 +62,7 @@
 
             var request = URLRequest(url: url)
             request.httpMethod = "POST"
-            request.addValue("Bearer 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", forHTTPHeaderField: "Authorization") // Securely replace with your actual API key
+            request.addValue("Bearer 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", forHTTPHeaderField: "Authorization") // Securely replace with your actual API key
             request.addValue("application/json", forHTTPHeaderField: "Content-Type")
 
             let body: [String: Any] = [

@@ -12,6 +12,7 @@ import SwiftUI
 struct MacGPTApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
@@ -22,6 +23,8 @@ struct MacGPTApp: App {
 //            .windowStyle(.hiddenTitleBar)
 //            .windowToolbarStyle(.unified)
 //            .windowResizability(.automatic)
+        
     }
+    
 }
 
