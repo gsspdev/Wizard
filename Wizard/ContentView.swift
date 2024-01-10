@@ -1,35 +1,52 @@
-// ContentView.swift
 import SwiftUI
-
+import AppKit
 
 struct ContentView: View {
-    @State public var userInput: String = ""
-    @State public var chatGPTResponse: String = "Your ChatGPT responses will appear here."
+    @State private var prompt: String = ""
+    @State private var imageUrls: [String] = []
+    @State private var nsImages: [NSImage] = []
 
     var body: some View {
         VStack {
-
-            HStack {
-                TextField("Type your message here...", text: $userInput)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding()
-
-                Button("Send") {
-                    ChatGPTNetworkManager.shared.fetchChatGPTResponse(userInput: userInput) { response in
-                        chatGPTResponse = response
-                    }
-                }
+            TextField("Enter your prompt here...", text: $prompt)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
-            }
 
-            ScrollView {
-                Text(chatGPTResponse).padding()
+            Button("Generate Image") {
+                DALLENetworkManager.shared.generateImage(prompt: prompt) { urls in
+                    imageUrls = urls
+                    downloadImages(from: urls)
+                }
             }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .border(Color.gray, width: 1)
             .padding()
+
+            // Display images
+            ForEach(nsImages, id: \.self) { nsImage in
+                Image(nsImages as! CGImage, scale: 1.0, label: Text("Generated Image"))
+                    .resizable()
+                    .scaledToFit()
+            }
+        }
+        .padding()
+    }
+
+    // Download images from URLs and update nsImages
+    func downloadImages(from urls: [String]) {
+        nsImages = urls.compactMap { url in
+            guard let imageUrl = URL(string: url),
+                  
+                  let imageData = try? Data(contentsOf: imageUrl),
+                  let nsImage = NSImage(data: imageData) else {
+                return nil
+            }
+            return nsImage
         }
     }
 }
 
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
 

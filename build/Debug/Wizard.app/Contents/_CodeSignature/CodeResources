@@ -4,18 +4,51 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Resources/AppIcon.icns</key>
+		<data>
+		GO3pilKuX4xZKAaJhRMkF1fGQJ4=
+		</data>
+		<key>Resources/Assets.car</key>
+		<data>
+		pXvN5sa1if782nU3jkSFFjF0P4M=
+		</data>
 		<key>Resources/Info.plist</key>
 		<data>
 		yVG2XiqmcZA1Xuc+76wJa09ZrT0=
 		</data>
+		<key>Resources/Secrets.xcconfig</key>
+		<data>
+		ABd+b7yIv7BmDLG2DSek6PPMkPI=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Resources/AppIcon.icns</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			m8JXdfJfQt3ak0hvlVY8GaGQOOd27VPgRKUesqQzpWQ=
+			</data>
+		</dict>
+		<key>Resources/Assets.car</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			icFbKsGh3lyHQ1wwvauaZb0k3E1TCUNZFGzi5FX5bBo=
+			</data>
+		</dict>
 		<key>Resources/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			vi67uAvt0zDUdbHIraB00w8w3snXVHo3ukEaZm3zmwo=
+			</data>
+		</dict>
+		<key>Resources/Secrets.xcconfig</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			lN6py58AffvbEWKrqMiYpbZufTEI6CqBW8FpGc8nb0E=
 			</data>
 		</dict>
 	</dict>

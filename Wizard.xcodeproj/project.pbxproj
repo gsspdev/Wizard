@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B0DF0A72B4E0CDC00870678 /* DALLENetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0DF0A62B4E0CDC00870678 /* DALLENetworkManager.swift */; };
 		8B696B372B3E9C8A00B196CF /* Wizard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B696B362B3E9C8A00B196CF /* Wizard.swift */; };
 		8B696B392B3E9C8A00B196CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B696B382B3E9C8A00B196CF /* ContentView.swift */; };
 		8B696B3B2B3E9C8A00B196CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B696B3A2B3E9C8A00B196CF /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B0DF0A62B4E0CDC00870678 /* DALLENetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DALLENetworkManager.swift; sourceTree = "<group>"; };
 		8B696B332B3E9C8A00B196CF /* Wizard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wizard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B696B362B3E9C8A00B196CF /* Wizard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wizard.swift; sourceTree = "<group>"; };
 		8B696B382B3E9C8A00B196CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 		8BEA67B22B405560003D7397 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				8B0DF0A62B4E0CDC00870678 /* DALLENetworkManager.swift */,
 				8BEA67B02B40515D003D7397 /* ChatGPTNetworkManager.swift */,
 			);
 			name = Networking;
@@ -119,7 +122,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1510;
-				LastUpgradeCheck = 1510;
+				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					8B696B322B3E9C8A00B196CF = {
 						CreatedOnToolsVersion = 15.1;
@@ -165,6 +168,7 @@
 				8BEA67AF2B404E72003D7397 /* AppDelegate.swift in Sources */,
 				8BEA67B12B40515D003D7397 /* ChatGPTNetworkManager.swift in Sources */,
 				8B696B392B3E9C8A00B196CF /* ContentView.swift in Sources */,
+				8B0DF0A72B4E0CDC00870678 /* DALLENetworkManager.swift in Sources */,
 				8BEA67AD2B404E5E003D7397 /* ViewController.swift in Sources */,
 				8B696B372B3E9C8A00B196CF /* Wizard.swift in Sources */,
 			);
@@ -208,6 +212,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -271,6 +276,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -304,6 +310,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Wizard/Preview Content\"";
 				DEVELOPMENT_TEAM = VMVQ575S4L;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -335,6 +342,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Wizard/Preview Content\"";
 				DEVELOPMENT_TEAM = VMVQ575S4L;
 				ENABLE_HARDENED_RUNTIME = YES;

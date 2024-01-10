@@ -45,6 +45,16 @@
     "swift-dependencies" : "/Users/gssp/development/swift/Wizard/build/Wizard.build/Debug/Wizard.build/Objects-normal/arm64/ContentView.swiftdeps",
     "swiftmodule" : "/Users/gssp/development/swift/Wizard/build/Wizard.build/Debug/Wizard.build/Objects-normal/arm64/ContentView~partial.swiftmodule"
   },
+  "/Users/gssp/development/swift/Wizard/Wizard/DALLENetworkManager.swift" : {
+    "const-values" : "/Users/gssp/development/swift/Wizard/build/Wizard.build/Debug/Wizard.build/Objects-normal/arm64/DALLENetworkManager.swiftconstvalues",
+    "dependencies" : "/Users/gssp/development/swift/Wizard/build/Wizard.build/Debug/Wizard.build/Objects-normal/arm64/DALLENetworkManager.d",
+    "diagnostics" : "/Users/gssp/development/swift/Wizard/build/Wizard.build/Debug/Wizard.build/Objects-normal/arm64/DALLENetworkManager.dia",
+    "index-unit-output-path" : "/Wizard.build/Debug/Wizard.build/Objects-normal/arm64/DALLENetworkManager.o",
+    "llvm-bc" : "/Users/gssp/development/swift/Wizard/build/Wizard.build/Debug/Wizard.build/Objects-normal/arm64/DALLENetworkManager.bc",
+    "object" : "/Users/gssp/development/swift/Wizard/build/Wizard.build/Debug/Wizard.build/Objects-normal/arm64/DALLENetworkManager.o",
+    "swift-dependencies" : "/Users/gssp/development/swift/Wizard/build/Wizard.build/Debug/Wizard.build/Objects-normal/arm64/DALLENetworkManager.swiftdeps",
+    "swiftmodule" : "/Users/gssp/development/swift/Wizard/build/Wizard.build/Debug/Wizard.build/Objects-normal/arm64/DALLENetworkManager~partial.swiftmodule"
+  },
   "/Users/gssp/development/swift/Wizard/Wizard/ViewController.swift" : {
     "const-values" : "/Users/gssp/development/swift/Wizard/build/Wizard.build/Debug/Wizard.build/Objects-normal/arm64/ViewController.swiftconstvalues",
     "dependencies" : "/Users/gssp/development/swift/Wizard/build/Wizard.build/Debug/Wizard.build/Objects-normal/arm64/ViewController.d",

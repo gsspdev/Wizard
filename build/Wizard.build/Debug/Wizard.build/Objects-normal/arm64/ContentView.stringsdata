@@ -4,11 +4,15 @@
     "Localizable": [
       {
         "comment": "",
-        "key": "Type your message here..."
+        "key": "Enter your prompt here..."
       },
       {
         "comment": "",
-        "key": "Send"
+        "key": "Generate Image"
+      },
+      {
+        "comment": "",
+        "key": "Generated Image"
       }
     ]
   },
